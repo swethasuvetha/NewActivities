@@ -1,0 +1,4 @@
+input_str = input("Enter a string: ")
+words = input_str.split()
+rev_str = " ".join(word[::-1] for word in words)
+print(rev_str)
