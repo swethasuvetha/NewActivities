@@ -1,0 +1,19 @@
+n = int(input(" people: "))
+time = int(input(" time: "))
+
+dir= 1  
+curr_pers = 1
+for _ in range(time):
+
+    if curr_pers== n and dir == 1:
+        dir = -1
+
+    elif curr_pers == 1 and dir== -1:
+        dir = 1
+
+    if dir == 1:
+        curr_pers += 1
+    else:
+        curr_pers -= 1
+
+print("The person holding the pillow after", time, "seconds is:", curr_pers)
