@@ -1,0 +1,11 @@
+marks = input("Enter the marks separated by commas: ")
+marks_res = marks.split(',')
+result = []
+
+for mark in marks_res:
+    if int(mark) >= 35:
+        result.append("Pass")
+    else:
+        result.append("Fail")
+
+print(",".join(result))
